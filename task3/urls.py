@@ -8,6 +8,6 @@ from courses.views import CoursesListAPI, CourseView, CoursesDetailAPI
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('courses.urls')),
-    re_path(r'^course/$', CoursesListAPI.as_view()),
-    re_path(r'^course/(?P<pk>[0-9]+)/$', CoursesDetailAPI.as_view()),
+    re_path(r'^course/$', CoursesListAPI.as_view(), name='courses-list'),
+    re_path(r'^course/(?P<pk>[0-9]+)/$', CoursesDetailAPI.as_view(), name='course-detail'),
 ]
