@@ -36,3 +36,6 @@ Akmatbek uulu Beks
 
 ## License
 -
+
+## Heroku
+Heroku [link](https://neobis-task5-pwoakk.herokuapp.com/)
